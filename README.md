@@ -1,8 +1,8 @@
 # Welcome to GCSC-Taskade🤩
+Here you can get your coding problems and you have to solve it.
 
 ![Header](taskade-assets/banner.png)
 
-Here you can get your coding problems and you have to solve it.
 <br />
 <br />
 
