@@ -1,9 +1,67 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCSC-Taskade</title>
+    <style>
+        *{
+            overflow-x: hidden;
+        }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+            }
+          }
+        }
+      }
+  </script>
+</head>
+<body class="bg-gray-950 flex flex-col justify-center">
+    <img src="images/banner.png" alt="banner">
 
-<h1 align="center">Welcome to GCSC-Taskade</h1>
-<p align="center">Page under construction!</p>
+    <section class="w-full flex flex-col justify-center" id="dept">
+        <div class="heading" id="heading">
+        <h1 data-aos="zoom-out" 
+            class="text-blue-400 font-bold lg:text-4xl md:text-3xl sm:text-2xl text-xl text-center mt-8 overflow-y-hidden">
+            CHOOSE YOUR SEMESTER
+        </h1>
+            <h2 data-aos="zoom-out" class="text-green-400 text-center lg:text-lg">Get questions for your semester.</h2>
+        </div>
+        
+        <div class="w-full flex flex-col justify-center" id="choose-dept"> 
+            <select name="semesters" id="choose-semesters" 
+            class="rounded-md p-2 pl-4 w-[20rem] self-center mt-8 bg-gray-800 text-white">
+                <option value="" selected disabled>Choose your semester</option>
+                <option value="1">Semester-1</option>
+                <option value="2">Semester-2</option>
+                <option value="3">Semester-3</option>
+                <option value="4">Semester-4</option>
+                <option value="5">Semester-5</option>
+                <option value="6">Semester-6</option>
+            </select> 
+        </div>
+        
+            <button type="submit" onclick="visitSemester();" 
+            class="w-[8rem] self-center bg-green-900 hover:bg-green-700 text-white p-2 font-semibold rounded-md mt-4">
+                Get Questions
+            </button>
 
+    </section>
+    
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="chooseMenu.js"></script>
 </body>
-</html> 
+</html>
